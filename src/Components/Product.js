@@ -50,7 +50,7 @@ export default function SimpleTable() {
     let isLoading = true;
 
     async function sampleFunc() {
-        let response = await fetch("/api/products");
+        let response = await fetch(apiURL + "/api/products");
         let body = await response.json();
         upDateData(body);
     }

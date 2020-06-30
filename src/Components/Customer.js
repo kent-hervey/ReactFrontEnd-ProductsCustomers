@@ -44,13 +44,14 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleTable() {
     const classes = useStyles();
+    const apiURL = "http://52.87.168.97";
 
     const [data, upDateData] = React.useState([]);
     const [firstLoad, setLoad] = React.useState(true);
     let isLoading = true;
 
     async function sampleFunc() {
-        let response = await fetch("/api/customers");
+        let response = await fetch(apiURL + "/api/customers");
         let body = await response.json();
         upDateData(body);
     }
