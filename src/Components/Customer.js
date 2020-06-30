@@ -12,6 +12,11 @@ import GroupIcon from "@material-ui/icons/Group";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
+//import apiURL from './Home.js';
+
+const apiURL = "http://52.87.168.97";
+
+
 
 const useStyles = makeStyles(theme => ({
     table: {
@@ -44,13 +49,14 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleTable() {
     const classes = useStyles();
-    const apiURL = "http://52.87.168.97";
+
 
     const [data, upDateData] = React.useState([]);
     const [firstLoad, setLoad] = React.useState(true);
     let isLoading = true;
 
     async function sampleFunc() {
+        console.log("apiURL is:  " + apiURL);
         let response = await fetch(apiURL + "/api/customers");
         let body = await response.json();
         upDateData(body);
