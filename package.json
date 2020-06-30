@@ -1,7 +1,6 @@
 {
   "name": "frontend-p-c",
   "version": "0.1.0",
-  "proxy": "http://52.87.168.97",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.10.2",
