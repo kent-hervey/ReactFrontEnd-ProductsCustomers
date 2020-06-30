@@ -14,7 +14,8 @@ import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 //import apiURL from './Home.js';
 
-const apiURL = "http://52.87.168.97";
+//const apiURL = "http://52.87.168.97";
+const apiURL = "";
 
 
 
