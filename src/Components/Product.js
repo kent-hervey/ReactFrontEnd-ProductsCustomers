@@ -54,7 +54,7 @@ export default function SimpleTable() {
     let isLoading = true;
 
     async function sampleFunc() {
-        let response = await fetch(apiURL + "/api/customers", { mode: 'no-cors' });
+        let response = await fetch(apiURL + "/api/customers");
         let body = await response.json();
         upDateData(body);
     }
