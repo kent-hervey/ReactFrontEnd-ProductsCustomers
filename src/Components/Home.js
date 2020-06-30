@@ -1,7 +1,9 @@
 
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from "react-router-dom";
 //import React from 'react';
-//import './App.css';
+//import './App.css';  
 
 
 class Home extends Component {
@@ -17,8 +19,12 @@ class Home extends Component {
 
                     <div class="col-50">
                         <ul>
-                            <li><a href="/customers">View By Customers</a></li>
-                            <li><a href="/products">View by Products</a></li>
+                            <li>
+                                <Link to="/customers">View By Customers</Link>
+                            </li>
+                            <li>
+                                <Link to="/products">View by Products</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

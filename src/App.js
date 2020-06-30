@@ -5,6 +5,7 @@ import Product from "./Components/Product";
 import Customer from "./Components/Customer";
 import Home from "./Components/Home";
 import NewProduct from "./Components/NewProduct";
+//import { Router } from '@reach/router';
 
 class App extends Component {
   render() {
