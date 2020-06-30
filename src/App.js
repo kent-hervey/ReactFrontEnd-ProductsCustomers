@@ -6,16 +6,17 @@ import Customer from "./Components/Customer";
 import Home from "./Components/Home";
 import NewProduct from "./Components/NewProduct";
 //import { Router } from '@reach/router';
+import { HashRouter } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={Product} />
         <Route exact path="/customers" component={Customer} />
         <Route exact path="/products-new" component={NewProduct} />
-      </Router>
+      </HashRouter>
     );
   }
 }
