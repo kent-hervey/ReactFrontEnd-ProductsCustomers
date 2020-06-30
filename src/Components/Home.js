@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 //import { Route, BrowserRouter as Router } from "react-router-dom";
 //import React from 'react';
 //import './App.css';  
-const apiURL = "http://52.87.168.97";
+//const apiURL = "http://52.87.168.97";
 
 class Home extends Component {
 
