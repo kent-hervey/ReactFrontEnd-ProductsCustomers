@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 //import { Route, BrowserRouter as Router } from "react-router-dom";
 //import React from 'react';
 //import './App.css';  
-
+const apiURL = "http://52.87.168.97";
 
 class Home extends Component {
+
     render() {
         return (
             <>
-                <div class="container">
+                <div className="container">
                     <h1>Welcome to Customers and Products Dashboard</h1>
 
                     <h3>Below select to view by either products or customers showing all of our sold/active products and active customers and their associations</h3>
