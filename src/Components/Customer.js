@@ -15,7 +15,8 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 //import apiURL from './Home.js';
 
 //const apiURL = "http://52.87.168.97";  //use this when building
-const apiURL = ""; //use this in dev
+//const apiURL = ""; //use this in dev
+const apiURL = "http://localhost:8080/";
 
 
 
