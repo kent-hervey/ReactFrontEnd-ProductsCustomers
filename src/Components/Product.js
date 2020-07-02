@@ -14,7 +14,8 @@ import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 //import './App.css';  
 //const apiURL = "http://52.87.168.97";  //use this when building
-const apiURL = ""; //use this in dev
+//const apiURL = ""; //use this in dev
+const apiURL = "http://localhost:8080";
 
 
 const useStyles = makeStyles(theme => ({
@@ -54,7 +55,7 @@ export default function SimpleTable() {
     let isLoading = true;
 
     async function sampleFunc() {
-        let response = await fetch(apiURL + "/api/customers");
+        let response = await fetch(apiURL + "/api/products");
         let body = await response.json();
         upDateData(body);
     }
