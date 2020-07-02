@@ -13,10 +13,11 @@ import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 //import apiURL from './Home.js';
+//import apiURL from '../App.js';
 
-//const apiURL = "http://52.87.168.97";  //use this when building
+//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
 //const apiURL = ""; //use this in dev
-const apiURL = "http://localhost:8080/";
+const apiURL = "http://localhost:8080";  //use this when testing the API itself
 
 
 
@@ -59,7 +60,12 @@ export default function SimpleTable() {
 
     async function sampleFunc() {
         console.log("apiURL is:  " + apiURL);
-        let response = await fetch(apiURL + "/api/customers");
+        let response = await fetch(apiURL + "/api/customers", {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
         let body = await response.json();
         upDateData(body);
     }

@@ -8,6 +8,10 @@ import NewProduct from "./Components/NewProduct";
 //import { Router } from '@reach/router';
 import { HashRouter } from 'react-router-dom';
 
+//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
+//const apiURL = ""; //use this in dev
+//const apiURL = "http://localhost:8080";  //use this when testing the API itself
+
 class App extends Component {
   render() {
     return (
