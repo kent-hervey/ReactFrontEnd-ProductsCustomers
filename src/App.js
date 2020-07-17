@@ -5,6 +5,7 @@ import Product from "./Components/Product";
 import Customer from "./Components/Customer";
 import Home from "./Components/Home";
 import NewProduct from "./Components/NewProduct";
+import NewCustomer from "./Components/NewCustomer";
 //import { Router } from '@reach/router';
 import { HashRouter } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ class App extends Component {
         <Route exact path="/products" component={Product} />
         <Route exact path="/customers" component={Customer} />
         <Route exact path="/products-new" component={NewProduct} />
+        <Route exact path="/customers-new" component={NewCustomer} />
       </HashRouter>
     );
   }
