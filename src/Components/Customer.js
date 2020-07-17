@@ -7,17 +7,17 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import Avatar from "@material-ui/core/Avatar";
-import GroupIcon from "@material-ui/icons/Group";
+//import Avatar from "@material-ui/core/Avatar";
+//import GroupIcon from "@material-ui/icons/Group";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 //import apiURL from './Home.js';
 //import apiURL from '../App.js';
 
-const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
+//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
 //const apiURL = ""; //use this in dev
-//const apiURL = "http://localhost:8080";  //use this when testing the API itself
+const apiURL = "http://localhost:8081";  //use this when testing the API itself
 
 
 
@@ -79,9 +79,7 @@ export default function SimpleTable() {
 
     return (
         <div className={classes.paper}>
-            <Avatar className={classes.avatar}>
-                <GroupIcon />
-            </Avatar>
+
             <Typography component="h1" variant="h5">
                 Customer Details
             </Typography>

@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 //import './App.css';  
-const apiURL = "http://52.87.168.97";  //use this when building
+//const apiURL = "http://52.87.168.97";  //use this when building
 //const apiURL = ""; //use this in dev
-//const apiURL = "http://localhost:8080";
+const apiURL = "http://localhost:8081";
 
 
 const useStyles = makeStyles(theme => ({
@@ -109,6 +109,12 @@ export default function SimpleTable() {
                 {" "}
                 <Typography align="left">
                     &#x2190; Head back to home page
+                </Typography>{" "}
+            </Link>
+            <Link className={classes.link} to="/products-new">
+                {" "}
+                <Typography align="left">
+                    &#x2192; Head over to the add Product Page
                 </Typography>{" "}
             </Link>
         </div>
