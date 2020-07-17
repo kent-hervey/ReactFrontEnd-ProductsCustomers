@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import AddEmployee from "./Components/AddEmployee";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+//import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Product from "./Components/Product";
 import Customer from "./Components/Customer";
 import Home from "./Components/Home";
