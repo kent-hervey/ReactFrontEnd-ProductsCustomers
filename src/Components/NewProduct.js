@@ -10,6 +10,9 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+const apiURL = "http://localhost:8081";  //use this when testing the API itself
+//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
+
 const useStyles = makeStyles(theme => ({
     paper: {
         marginTop: theme.spacing(7),
@@ -64,7 +67,8 @@ export default function NewProduct() {
     const [message, setMessage] = React.useState("Nothing saved in the session");
 
     async function sampleFunc(toInput) {
-        const response = await fetch("/api/products", {
+        console.log("apiURL is:  " + apiURL);
+        const response = await fetch(apiURL + "/api/products", {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "cors", // no-cors, *cors, same-origin
             cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -83,6 +87,7 @@ export default function NewProduct() {
     }
 
     const handleSubmit = variables => {
+        console.log("first inside handleSubmit")
         const toInput = { name, description, modelNumber, listPrice };
         sampleFunc(toInput);
         setName("");
@@ -116,13 +121,13 @@ export default function NewProduct() {
                                 value={name}
                                 label="Name"
                                 name="name"
-                                autocomplete="name"
+                                autoComplete="name"
                                 onChange={handleNameChange}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField
-                                autocomplete="description"
+                                autoComplete="description"
                                 name="description"
                                 variant="outlined"
                                 required
@@ -142,7 +147,7 @@ export default function NewProduct() {
                                 value={modelNumber}
                                 label="Model Number"
                                 name="modelNumber"
-                                autocomplete="modelNumber"
+                                autoComplete="modelNumber"
                                 onChange={handleModelNumberChange}
                             />
                         </Grid>
@@ -163,9 +168,9 @@ export default function NewProduct() {
                             fullWidth
                             variant="contained"
                             color="primary"
-                            preventDefault
+
                             className={classes.submit}
-                            onclick={handleSubmit}
+                            onClick={handleSubmit}
                         >
                             Submit
                         </Button>
