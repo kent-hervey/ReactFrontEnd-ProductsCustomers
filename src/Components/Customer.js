@@ -25,10 +25,6 @@ const useStyles = makeStyles(theme => ({
     table: {
         minWidth: 600
     },
-    avatar: {
-        margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main
-    },
     paper: {
         display: "flex",
         flexDirection: "column",
