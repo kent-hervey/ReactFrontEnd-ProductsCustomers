@@ -119,6 +119,13 @@ export default function SimpleTable() {
                     &#x2190; Head back to home page
                 </Typography>{" "}
             </Link>
+            <Link className={classes.link} to="/customers-new">
+                {" "}
+                <Typography align="left">
+                    &#x2192; Head over to the add Customer Page
+                </Typography>{" "}
+            </Link>
+
         </div>
     );
 } 
