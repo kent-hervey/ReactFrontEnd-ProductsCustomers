@@ -44,7 +44,22 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+
+
+
+
+
 export default function SimpleTable() {
+
+    // updateCustomerClicked(id) {
+    //     console.log('update' + id);
+    //     this.props.history.push(`/customers/${id}`);
+
+    // }
+
+
+
+
     const classes = useStyles();
 
 
@@ -92,6 +107,7 @@ export default function SimpleTable() {
                                     <TableCell align="center">Location</TableCell>
                                     <TableCell align="center">Contact Name</TableCell>
                                     <TableCell align="center">Contact Email</TableCell>
+                                    <TableCell align="center">Update</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -101,6 +117,7 @@ export default function SimpleTable() {
                                         <TableCell align="center">{row.location}</TableCell>
                                         <TableCell align="center">{row.contactName}</TableCell>
                                         <TableCell align="center">{row.contactEmail}</TableCell>
+                                        <TableCell align="center"><Link to={"/customers/" + row.id} >Update</Link></TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>
