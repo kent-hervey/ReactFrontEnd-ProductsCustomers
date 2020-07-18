@@ -9,6 +9,7 @@ import NewProduct from "./Components/NewProduct";
 import NewCustomer from "./Components/NewCustomer";
 //import { Router } from '@reach/router';
 import { HashRouter } from 'react-router-dom';
+import UpdateCustomer from "./Components/UpdateCustomer";
 
 //const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
 //const apiURL = ""; //use this in dev
@@ -23,6 +24,7 @@ class App extends Component {
         <Route exact path="/customers" component={Customer} />
         <Route exact path="/products-new" component={NewProduct} />
         <Route exact path="/customers-new" component={NewCustomer} />
+        <Route exact path="/customers/:id" component={UpdateCustomer} />
       </HashRouter>
     );
   }
