@@ -8,8 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-const apiURL = "http://localhost:8081";  //use this when testing the API itself
-//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
+//const apiURL = "http://localhost:8081";  //use this when testing the API itself
+const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
 
 const useStyles = makeStyles(theme => ({
     paper: {

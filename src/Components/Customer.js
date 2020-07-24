@@ -13,9 +13,9 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 //import apiURL from './Home.js';
 //import apiURL from '../App.js';
 
-//const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
+const apiURL = "http://52.87.168.97";  //use this when connecting to API remotely
 //const apiURL = ""; //use this in dev
-const apiURL = "http://localhost:8081";  //use this when testing the API itself
+//const apiURL = "http://localhost:8081";  //use this when testing the API itself
 
 
 
